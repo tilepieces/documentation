@@ -71,14 +71,14 @@
 </li><li><span class="ol-counter">6</span><a href="#">Customizing and building Tilepieces</a></li></ol>
 </section></nav>
 <section id="create">
-    <h1>DOM API - addClass</h1>
-    <p>Adds the specified class to an element.<br>Throws an exception when the application cannot find a match for the element or the class attribute is different. See <a href="/html-live-edit.html">HTML live edit</a> for further information.</p><pre><code class="hljs language-javascript">tilepieces.<span class="hljs-property">core</span>.<span class="hljs-property">htmlMatch</span>.<span class="hljs-title function_">addClass</span>(element,className);</code></pre>
+    <h1>DOM API - outerHTML</h1>
+    <p>Replace the element with nodes parsed from the given string.<br>Throws an exception when the application cannot find a match for the element or the html is different. See <a href="/html-live-edit.html">HTML live edit</a> for further information.</p><pre><code class="hljs language-javascript">tilepieces.<span class="hljs-property">core</span>.<span class="hljs-property">htmlMatch</span>.<span class="hljs-title function_">outerHTML</span>(element,HTML);</code></pre>
     <h2>Parameters</h2>
     <dl>
 
 
         <dt>element</dt><dd><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element">DOM element</a>
-    </dd><dt>className</dt><dd><span style="color: rgb(27, 27, 27); font-family: arial, x-locale-body, sans-serif; letter-spacing: -0.0444444px; background-color: rgb(255, 255, 255);">A string to be added from the class attribute of the matching element.</span><br></dd></dl>
+    </dd><dt>HTML</dt><dd><span>A string containing an HTML serialization of the element and its descendants.&nbsp;Setting the value of outerHTML replaces the element and all of its descendants with a new DOM tree constructed by parsing the specified htmlString.</span><br></dd></dl>
     <h2>Return Value</h2><p>None.</p>
     
 
