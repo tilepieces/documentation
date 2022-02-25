@@ -1,0 +1,17 @@
+{
+  "name": "documentation",
+  "components": {
+    "documentation-nav": {
+      "name": "documentation-nav",
+      "path": "/components/documentation-nav"
+    }
+  },
+  "lastFileOpened": "/core-API.html",
+  "openedPanels": [
+    "package-manager",
+    "project-explorer",
+    "html-inspector",
+    "component-panel"
+  ],
+  "relativePaths": false
+}

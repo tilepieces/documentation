@@ -1,0 +1,37 @@
+{
+  "name": "documentation",
+  "description": "",
+  "version": "1.0.0",
+  "author": "",
+  "website": "",
+  "repository": "",
+  "html": "",
+  "addDependenciesToBundles": false,
+  "bundle": {
+    "stylesheet": {
+      "href": "documentation-css.css"
+    },
+    "stylesheetHeader": "",
+    "stylesheetFooter": "",
+    "scriptHeader": "",
+    "scriptFooter": "",
+    "script": {}
+  },
+  "sources": {
+    "stylesheets": [],
+    "scripts": []
+  },
+  "dependencies": [],
+  "mergeMiscellaneous": false,
+  "miscellaneous": [],
+  "selector": "",
+  "interface": "",
+  "fixedHTML": false,
+  "parseHTML": "",
+  "components": {
+    "documentation/hljs": {
+      "path": "/components/documentation/hljs",
+      "name": "documentation/hljs"
+    }
+  }
+}

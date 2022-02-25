@@ -1,0 +1,29 @@
+{
+  "name": "documentation-nav",
+  "description": "tilepieces 'documentation nav'",
+  "version": "0.0.1",
+  "author": "simone di nuovo",
+  "website": "",
+  "repository": "",
+  "html":"nav.html",
+  "addDependenciesToBundles": false,
+  "bundle": {
+    "stylesheet": {
+      "href": "nav-css.css"
+    },
+    "stylesheetHeader": "",
+    "stylesheetFooter": "",
+    "script": {}
+  },
+  "sources": {
+  },
+  "dependencies": [
+  ],
+  "components": {},
+  "mergeMiscellaneous": false,
+  "miscellaneous": [],
+  "selector": "",
+  "interface": "",
+  "fixedHTML": true,
+  "parseHTML": ""
+}

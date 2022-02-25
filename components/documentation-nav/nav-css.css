@@ -1,0 +1,7 @@
+a[aria-controls="navigation-index"] { width: 100%; display: block; text-align: center; }
+@media screen and (min-width: 768px) {
+  a[aria-controls="navigation-index"] { display: none; }
+}
+nav ol { list-style: none; margin: 0px; padding: 0px; }
+nav li { display: flex; }
+span.ol-counter { margin-right: 8px; }
