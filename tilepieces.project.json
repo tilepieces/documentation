@@ -6,12 +6,13 @@
       "path": "/components/documentation-nav"
     }
   },
-  "lastFileOpened": "/api/dom/outerHTML.html",
+  "lastFileOpened": "/panels/package-manager/project-settings.html",
   "openedPanels": [
     "package-manager",
     "project-explorer",
     "html-inspector",
-    "component-panel"
+    "css-viewer"
   ],
-  "relativePaths": false
+  "relativePaths": false,
+  "sandboxFrame": false
 }
