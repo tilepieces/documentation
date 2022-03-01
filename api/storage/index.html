@@ -71,29 +71,12 @@
 </li><li><span class="ol-counter">6</span><a href="#">Customizing and building Tilepieces</a></li><li><span class="ol-counter">7</span><a href="/core-API.html">Using Core API</a></li></ol>
 </section></nav>
 <section id="create">
-    <h1>create</h1>
-    <p>
-        create a new project labeled as specified by <i>projectName</i> ( if not exists ).<br></p><pre class="javascript" style="font-family:monospace;">await storageInterface.<span style="color: #660066;">create</span><span style="color: #009900;">(</span><span style="color: #3366CC;">"test"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><span style="color: #006600; font-style: italic;">// logs {name:"test",schema:{}}</span></pre>
-    <h2>Parameters</h2>
-    <dl>
-        <dt>projectName</dt>
-        <dd><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> - name of the project</dd>
-    </dl>
-    <h2>Return Value</h2><p>A <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a> that to resolve to a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON">JSON object</a> structured as follows</p>
-    <dl>
-        
-        
-        <dt>name</dt>
-            <dd><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>- name of the project created</dd>
-            <dt>schema</dt>
-            <dd><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON">JSON object</a> tilepiece directory representation as follows:</dd>
-            <dl>
-                <dt>directory1/directory</dt>
-                <dd>{}</dd>
-                <dt>directory1/file.txt</dt>
-                <dd>directory1/file.txt</dd>
-            </dl>
-    </dl><h2>Description</h2><p>This method is responsible for creating a tilepiece project.<br>After this method is called, the domain will respond with files present within the project path (with the exclusion of the 'tilepiece' application path).<br>The other methods use the path of the last created&nbsp;project as the root for their operations.<br><br>When a project is created, getSettings response will return a JSON property called 'projects'. This property is an array, and the first one must be the last <em>projectName</em> called by this method.</p>
+    <h1>storage API</h1>
+    <div>The storage API are javascript functions that allow read / write operations.</div><div>Developers can then choose where to save files, using whatever backend language and environment they prefer.</div>There are currently two types of API, from which programmers can take inspiration: in the first, the functions call http APIs written in Node.js.<br><span>In the second, the application writes to the browser's API caches.<br></span>The APIs used are the following:<p></p>
+  <ul>
+    <li><a href="create.html">Create</a></li>
+  <li><a href="read.html">Read</a></li><li><a href="update.html">Update</a></li><li><a href="delete.html">Delete</a></li><li><a href="copy.html">Copy</a></li><li><a href="search.html">Search</a></li><li><a href="getSettings.html">GetSettings</a></li><li><a href="setSettings.html">SetSettings</a></li><li><a href="createComponent.html">CreateComponent</a></li><li><a href="deleteComponent.html">DeleteComponent</a><br></li></ul><div>It is worth noting that there is no need to write all these functions: If we decide to remove the <a href="/panels/package-manager.html">package manager panel</a>, we could do without the createComponent, deleteComponent, setSettings and Create api. In this way, we could work on a single project and the components would be "fixed" (neither importable nor writable directly by the user). This solution may be cost effective in some scenarios.</div>
+
 </section>
 
 </body></html>

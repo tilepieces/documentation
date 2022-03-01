@@ -2,7 +2,7 @@
 <html lang="en"><head>
     <meta charset="UTF-8">
     <title></title>
-    <style>h1 { font-size: 3em; }dl dl { margin-left: 1em; }dt { font-weight: bold; }h2 { font-weight: normal; }a, a:visited, a:active { color: rgb(57, 57, 150); }body { font-family: sans-serif; font-size: 1em; }pre { margin: 0px; }</style><link rel="stylesheet" href="css.css" data-webtile-current-stylesheet=""><link href="/documentation-css.css" rel="stylesheet" data-tilepieces-component="documentation"><link href="/components/documentation-nav/nav-css.css" rel="stylesheet" data-tilepieces-component="documentation-nav"></head>
+<link rel="stylesheet" href="css.css" data-webtile-current-stylesheet=""><link href="/documentation-css.css" rel="stylesheet" data-tilepieces-component="documentation"><link href="/components/documentation/hljs/css.css" rel="stylesheet" data-tilepieces-component="documentation/hljs"><link href="/components/documentation-nav/nav-css.css" rel="stylesheet" data-tilepieces-component="documentation-nav"></head>
 <body><nav data-tilepieces-component="documentation-nav">
 	
 <a href="#navigation-index" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">Index</a><section id="navigation-index">
@@ -82,16 +82,14 @@
       }
     }
   );</code></pre>
-    <h2>Parameters</h2>
-    <dl>
+    <h2>Parameters<br></h2>
+  <dl>
+    
+    <dt>projectSettings</dt><dd><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>&nbsp;- A list of properties of the current project in the form key (name) - value (new value)</dd>
+  <dt>Settings</dt><dd><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>&nbsp;- A list of properties of global properties in the form key (name) - value (new value)<br></dd></dl>
 
+    <h2>Return Value</h2><p><span style="font-size: 16px;">A&nbsp;</span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" style="color: rgb(57, 57, 150); font-size: 16px;">Promise</a><span style="font-size: 16px;">&nbsp;that is resolved if the process went well.</span></p>
 
-        <dt>settings</dt><dd><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON">JSON object</a><dl>
-        <dt>local</dt>
-        <dd><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>- If the component is local or global</dd>
-        <dt>array</dt><dd><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array">array</a>- An array of&nbsp;<a href="#">components</a>&nbsp;to delete ( Only the 'name' property is needed )</dd><dt>deleteFiles</dt><dd><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a>- Component files aren't deleted by default. Check this property to delete them</dd></dl>
-    </dd></dl>
-    <h2>Return Value</h2><p>A <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&nbsp;that is resolved if the process went well</p>
     
 
 </section>

@@ -2,7 +2,7 @@
 <html lang="en"><head>
     <meta charset="UTF-8">
     <title></title>
-<style data-webtile-current-stylesheet="">h1 { font-size: 3em; }dl dl { margin-left: 1em; }dt { font-weight: bold; }pre { border-left: 6px solid rgb(0, 82, 130); font-size: 1rem; line-height: 1.4; margin: 0px 0px 24px; max-width: 100%; overflow: auto; padding: 24px; width: 100%; background-color: rgb(244, 244, 244); box-sizing: border-box; }h2 { font-weight: normal; }a, a:visited, a:active { color: rgb(57, 57, 150); }body { font-family: sans-serif; font-size: 1em; }</style></head>
+<link href="/components/documentation/hljs/css.css" rel="stylesheet" data-tilepieces-component="documentation/hljs"><link href="/documentation-css.css" rel="stylesheet" data-tilepieces-component="documentation"><link href="/components/documentation-nav/nav-css.css" rel="stylesheet" data-tilepieces-component="documentation-nav"></head>
 <body><nav data-tilepieces-component="documentation-nav">
 	
 <a href="#navigation-index" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">Index</a><section id="navigation-index">
@@ -73,7 +73,9 @@
 <section id="create">
     <h1>storage API - create</h1>
     <p>
-        create a new project labeled as specified by <i>projectName</i> ( if not exists ).<br></p><pre class="javascript" style="font-family:monospace;">await storageInterface.<span style="color: #660066;">create</span><span style="color: #009900;">(</span><span style="color: #3366CC;">"test"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><span style="color: #006600; font-style: italic;">// logs {name:"test",schema:{}}</span></pre>
+        create a new project labeled as specified by <i>projectName</i> ( if not exists ).<br></p><pre><code class="hljs language-javascript">
+<span class="hljs-keyword">await</span> storageInterface.<span class="hljs-title function_">create</span>(<span class="hljs-string">"test"</span>);<span class="hljs-comment">// logs {name:"test",schema:{}}</span>
+</code></pre>
     <h2>Parameters</h2>
     <dl>
         <dt>projectName</dt>
@@ -93,7 +95,7 @@
                 <dt>directory1/file.txt</dt>
                 <dd>directory1/file.txt</dd>
             </dl>
-    </dl><h2>Description</h2><p>This method is responsible for creating a tilepiece project.<br>After this method is called, the domain will respond with files present within the project path (with the exclusion of the 'tilepiece' application path).<br>The other methods use the path of the last created&nbsp;project as the root for their operations.<br><br>When a project is created, getSettings response will return a JSON property called 'projects'. This property is an array, and the first one must be the last <em>projectName</em> called by this method.</p>
+    </dl><h2>Description</h2><p>This method is responsible for creating a tilepieces project.<br>After this method is called, the domain will respond with files present within the project path (with the exclusion of the 'tilepiece' application path).<br>The other methods use the path of the last created&nbsp;project as the root for their operations.<br></p>
 </section>
 
 </body></html>
