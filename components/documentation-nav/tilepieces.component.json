@@ -21,9 +21,9 @@
   ],
   "components": {},
   "mergeMiscellaneous": false,
-  "miscellaneous": [],
-  "selector": "",
-  "interface": "",
+  "miscellaneous": ["set.js"],
+  "selector": "#navigation-index",
+  "interface": "interface.html",
   "fixedHTML": true,
   "parseHTML": ""
 }

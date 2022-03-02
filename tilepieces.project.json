@@ -6,14 +6,14 @@
       "path": "/components/documentation-nav"
     }
   },
-  "lastFileOpened": "/data-structure/project.html",
+  "lastFileOpened": "/api/storage/index.html",
   "openedPanels": [
     "package-manager",
     "project-explorer",
+    "element-panel",
     "html-inspector",
-    "component-panel",
-    "panel-history"
+    "component-panel"
   ],
   "relativePaths": false,
-  "sandboxFrame": false
+  "sandboxFrame": true
 }
