@@ -2,7 +2,7 @@
 <html lang="en"><head>
     <meta charset="UTF-8">
     <title></title>
-<link href="/documentation-css.css" rel="stylesheet" data-tilepieces-component="documentation"><link href="/components/documentation/hljs/css.css" rel="stylesheet" data-tilepieces-component="documentation/hljs"><link href="/components/documentation-nav/nav-css.css" rel="stylesheet" data-tilepieces-component="documentation-nav"></head>
+<link href="/documentation-css.css" rel="stylesheet" data-tilepieces-component="documentation"><link href="/components/documentation/hljs/css.css" rel="stylesheet" data-tilepieces-component="documentation/hljs"><link href="/components/documentation-nav/nav-css.css" rel="stylesheet" data-tilepieces-component="documentation-nav" data-tilepieces-current-stylesheet=""></head>
 <body><nav data-tilepieces-component="documentation-nav">
 	
 <a href="#navigation-index" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">Index</a><section id="navigation-index">
@@ -110,10 +110,9 @@
 </section></nav>
 <main id="create">
     <h1>CSS API</h1>
-    <div>The storage <a href="https://en.wikipedia.org/wiki/API" target="_blank">API</a> consists of a series of javascript functions that allow read / write operations.</div><div>Developers can then choose where to save files, using whatever backend language and environment they prefer.</div>There are currently two types of already developed API, from which programmers can take inspiration: in the first, the functions call http APIs written in Node.js.<br><span>In the second, the application writes to the browser's API caches.<br></span>The APIs used are the following:<p></p>
-  <ul>
-    <li><a href="create.html">Create</a></li>
-  <li><a href="read.html">Read</a></li><li><a href="update.html">Update</a></li><li><a href="delete.html">Delete</a></li><li><a href="copy.html">Copy</a></li><li><a href="search.html">Search</a></li><li><a href="getSettings.html">GetSettings</a></li><li><a href="setSettings.html">SetSettings</a></li><li><a href="createComponent.html">CreateComponent</a></li><li><a href="deleteComponent.html">DeleteComponent</a><br></li></ul><div>It is worth noting that there is no need to write all these functions: If we decide to remove the <a href="/panels/package-manager.html">package manager panel</a>, we could do without the createComponent, deleteComponent, setSettings and Create api. In this way, we could work on a single project and the components would be "fixed" (neither importable nor writable directly by the user). This solution may be cost effective in some scenarios.</div>
+    <div>These APIs allow you to make changes in the current stylesheet, or to create one if it doesn't exist.&nbsp;</div><ul><li><a href="/api/css/appendKeyframe.html">appendKeyframe</a></li><li><a href="/api/css/createCurrentStyleSheet.html">createCurrentStyleSheet</a></li><li><a href="/api/css/deleteCssRule.html">deleteCssRule</a></li><li><a href="/api/css/deleteKeyframe.html">deleteKeyframe</a></li><li><a href="/api/css/insertCssRule.html">insertCssRule</a></li><li><a href="/api/css/setCss.html">setCss</a></li><li><a href="/api/css/setCssMedia.html">setCssMedia</a></li><li><a href="/api/css/setCssProperty.html">setCssProperty</a></li><li><a href="/api/css/setCurrentStyleSheet.html">setCurrentStyleSheet</a></li><li><a href="/api/css/setKeyText.html">setKeyText</a></li><li><a href="/api/css/setRuleName.html">setRuleName</a></li><li><a href="/api/css/setSelectorText.html">setSelectorText</a></li></ul>
+  
+
 
 </main>
 

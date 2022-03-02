@@ -1,4 +1,4 @@
-body { font-family: sans-serif; line-height: 1.5; display: flex; color: rgb(102, 102, 102); }
+body { font-family: sans-serif; line-height: 1.7; display: flex; color: rgb(102, 102, 102); font-size: 1.2em; }
 main img { width: 100%; max-width: 100%; }
 figure { width: 100%; margin: 0px; position: relative; max-width: 100%; }
 figure div, figure > a { position: absolute; border: 3px solid; cursor: pointer; }
@@ -67,8 +67,9 @@ video { max-width: 100%; }
 div.gallery__images-item { margin: 2px; }
 p + ul { margin-block-start: -15px; padding-inline-start: 25px; }
 main p + ul { list-style: none; }
-main p + ul li::before { content: "• "; color: rgb(163, 152, 198); font-size: 30px; line-height: normal; position: absolute; margin-left: -15px; margin-top: -4px; }
+main p + ul li::before { content: "• "; color: rgb(163, 152, 198); font-size: 30px; line-height: normal; position: absolute; margin-left: -15px; margin-top: 0px; }
 main h4 { color: rgb(163, 152, 198); }
 div.flex-content { display: flex; place-content: flex-start; align-items: center; margin-bottom: 2em; }
 main .flex-content img { width: auto; max-width: 50%; height: auto; }
 h2:target { color: rgb(163, 152, 198) !important; }
+h2:target::before { content: "¶"; }
