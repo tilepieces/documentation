@@ -5,7 +5,7 @@ a[aria-controls="navigation-index"] { width: 100%; display: block; text-align: c
 nav ol { margin: 0px; padding: 0px; list-style: none; }
 nav li { display: flex; font-size: 18px; }
 span.ol-counter { margin-right: 8px; color: rgb(153, 135, 213); }
-nav { background-color: rgb(240, 240, 240); padding: 1em 0px !important; }
+nav { background-color: rgb(255, 255, 255); padding: 1em 0px !important; }
 #navigation-index { position: sticky; top: 10px; padding: 1em; }
 nav #navigation-index > ol > li { margin: 1em auto; text-transform: uppercase; font-size: 18px; }
 nav a { text-decoration: none; color: rgb(139, 139, 139); }

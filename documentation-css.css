@@ -13,7 +13,7 @@ main img.inline { width: auto; }
 #css-button { top: 11%; height: 9%; width: 4%; left: 12.1%; }
 #js-button { top: 11%; height: 9%; width: 4%; left: 18.2%; }
 nav { width: 30%; min-height: 100vh; }
-main { width: 70%; padding: 1em; }
+main { width: 70%; padding: 1em; background-color: rgb(245, 245, 245); }
 @media screen and (max-width: 768px) {
   body { flex-direction: column; }
   nav { width: 100%; position: sticky; top: 1px; z-index: 1; min-height: auto; max-width: 100%; margin: 0px; }
@@ -32,20 +32,20 @@ main { width: 70%; padding: 1em; }
 a { color: rgb(152, 130, 222); text-decoration: none; }
 figure.info-pop > div { border: none; }
 figure.info-pop > div::after { content: "?"; background-color: rgb(166, 207, 107); border-radius: 100%; width: 20px; height: 20px; position: absolute; right: -15px; top: -15px; border: 2px solid rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.286) 1px 1px 3px; color: rgb(255, 255, 255); text-align: center; vertical-align: middle; line-height: initial; }
-figure.info-pop div > div { border-radius: 7px; border: 2px solid rgb(123, 187, 93); box-shadow: rgba(0, 0, 0, 0.286) 1px 1px 3px; padding: 1em; }
-figure div.document-title > div { left: 0px; position: relative; margin: 130px -30% 0px; top: 0px !important; width: 65vw !important; }
-figure.info-pop div.document-url { }
-figure.info-pop div.document-url > div { right: 0px; left: auto; top: 20px; width: 500px; }
+figure.info-pop div > div { border-radius: 7px; border: 0px solid rgb(123, 187, 93); box-shadow: rgba(0, 0, 0, 0.286) 1px 1px 3px; padding: 1em; z-index: 1; background-color: rgba(0, 0, 0, 0.9) !important; color: rgb(255, 255, 255); font-size: 16px; }
+figure.info-pop div.document-title > div { left: 0px; top: 11px !important; width: 400px; max-width: 90vw; }
+figure.info-pop div.document-url { top: 15%; height: 7%; }
+figure.info-pop div.document-url > div { right: 0px; left: auto; top: 20px; width: 500px; max-width: 90vw; }
 h3 { padding-bottom: 0px; }
 h4 { padding: 0px; margin: 0px; }
 h1 { padding-top: 0px; margin-top: 0px; }
 figure.info-pop div.menu-trigger > div > a::after { margin-left: 10px; background-color: rgb(163, 152, 198); width: 25px; border-radius: 100%; height: 25px; content: url("/miscellaneous/link-icon.svg"); text-align: center; vertical-align: middle; display: inline-block; line-height: 28px; }
-figure.info-pop div > div > a { color: rgb(102, 102, 102); }
+figure.info-pop div > div > a { color: rgb(255, 255, 255); }
 figure.info-pop div.DOM-selector > div > a::after { margin-left: 10px; background-color: rgb(163, 152, 198); width: 25px; border-radius: 100%; height: 25px; content: url("/miscellaneous/link-icon.svg"); text-align: center; vertical-align: middle; display: inline-block; line-height: 28px; }
 figure.info-pop div.text-edit > div > a::after { margin-left: 10px; background-color: rgb(163, 152, 198); width: 25px; border-radius: 100%; height: 25px; content: url("/miscellaneous/link-icon.svg"); text-align: center; vertical-align: middle; display: inline-block; line-height: 28px; }
 figure.info-pop div.frame > div > a::after { margin-left: 10px; background-color: rgb(163, 152, 198); width: 25px; border-radius: 100%; height: 25px; content: url("/miscellaneous/link-icon.svg"); text-align: center; vertical-align: middle; display: inline-block; line-height: 28px; }
-figure div.frame { }
-figure.info-pop div.frame > div { right: 0px; width: 400px; }
+figure.info-pop div.frame { margin-top: 7%; width: 73%; height: 100px; }
+figure.info-pop div.frame > div { right: 0px; width: 345px; }
 video { max-width: 100%; }
 .video-content iframe { width: 100%; aspect-ratio: 16 / 9; }
 .gallery img { width: 100%; height: 100%; display: block; object-fit: cover; }
@@ -73,3 +73,9 @@ div.flex-content { display: flex; place-content: flex-start; align-items: center
 main .flex-content img { width: auto; max-width: 50%; height: auto; }
 h2:target { color: rgb(163, 152, 198) !important; }
 h2:target::before { content: "¶"; }
+div.empty-space { padding: 30px; }
+figure.info-pop div.document-title { left: 12%; height: 8%; top: 3%; }
+figure.info-pop div.menu-trigger { top: 25%; left: 0px; height: 13%; }
+figure.info-pop div.DOM-selector { top: 25%; left: 7%; height: 13%; }
+figure.info-pop div.text-edit { top: 25%; left: 14%; height: 13%; }
+figure.info-pop div.screen-dimensions { top: 25%; left: 21%; height: 13%; }
