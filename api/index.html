@@ -105,7 +105,7 @@
 </li><li><span class="ol-counter">7</span><a href="/building-your-own-tilepieces.html">Customizing and building Tilepieces</a></li><li><span class="ol-counter">8</span><details>
     <summary><a href="/how-to/index.html">HOW TO</a></summary><ol>
     <li><span class="ol-counter">8.1</span><a href="/data-structure/project.html">create a project with an html</a></li>
-  <li><span class="ol-counter">8.2</span><a href="/data-structure/component.html">edit html text and media</a></li><li><span class="ol-counter">8.3</span><a href="/data-structure/general-settings.html">edit html structure</a></li><li><span class="ol-counter">8.4</span><a href="/data-structure/general-settings.html">edit style</a></li><li><span class="ol-counter">8.5</span><a href="/data-structure/general-settings.html">create and reuse a component</a></li></ol>
+  <li><span class="ol-counter">8.2</span><a href="/data-structure/component.html">edit html text and media</a></li><li><span class="ol-counter">8.3</span><a href="/data-structure/general-settings.html">edit html structure</a></li><li><span class="ol-counter">8.4</span><a href="/data-structure/general-settings.html">edit style</a></li><li><span class="ol-counter">8.5</span><a href="/data-structure/general-settings.html">create and reuse a component</a></li><li><span class="ol-counter">8.6</span><a href="/how-to/using-tilepieces-with-browser-developer-tools.html">using tilepieces with browser developer tools</a></li></ol>
   </details></li></ol>
 </section></nav>
 <main id="create">
@@ -114,7 +114,10 @@
   <dl>
     <dt><a href="storage/index.html">Storage</a></dt>
     <dd>They are for file read/write operations,&nbsp;and are meant to be modified by developers to use their preferred <a href="https://en.wikipedia.org/wiki/Frontend_and_backend">backend</a> environment.</dd>
-  <dt><a href="html/index.html">HTML</a> and <a href="css/index.html">CSS</a></dt><dd>These are provided by the application framework, and allow you to edit the html safely (see <a href="/html-live-edit.html">html live edit</a>) and its stylesheet (see <a href="#">current stylesheet</a>).</dd></dl>
+  <dt><a href="html/index.html">HTML</a> and <a href="css/index.html">CSS</a></dt><dd>These are provided by the application framework, and allow you to edit the html safely (see <a href="/html-live-edit.html">html live edit</a>) and its stylesheet (see <a href="#">current stylesheet</a>).</dd></dl><div><span>These APIs can be called directly from the browser console, or they can be included in a component panel or interface.</span><br><span>APIs that modify HTML or CSS expect a document to be selected, and can interact with these properties of the <code>tilepieces </code>object</span>&nbsp;(instantiated as a global variable in the main window):<pre><code class="hljs language-javascript">tilepieces.<span class="hljs-property">core</span>.<span class="hljs-property">currentWindow </span><span class="hljs-comment">// The window of the selected document</span>
+tilepieces.<span class="hljs-property">core</span>.<span class="hljs-property">currentDocument </span><span class="hljs-comment">// The selected document element</span>
+tilepieces.<span class="hljs-property">core</span>.<span class="hljs-property">currentStyleSheet </span><span class="hljs-comment">// current stylesheet, if any</span>
+tilepieces.<span class="hljs-property">elementSelected </span><span class="hljs-comment">// selected element, if any</span></code>    </pre></div>
 
 
 </main>

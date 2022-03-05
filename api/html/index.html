@@ -105,13 +105,13 @@
 </li><li><span class="ol-counter">7</span><a href="/building-your-own-tilepieces.html">Customizing and building Tilepieces</a></li><li><span class="ol-counter">8</span><details>
     <summary><a href="/how-to/index.html">HOW TO</a></summary><ol>
     <li><span class="ol-counter">8.1</span><a href="/data-structure/project.html">create a project with an html</a></li>
-  <li><span class="ol-counter">8.2</span><a href="/data-structure/component.html">edit html text and media</a></li><li><span class="ol-counter">8.3</span><a href="/data-structure/general-settings.html">edit html structure</a></li><li><span class="ol-counter">8.4</span><a href="/data-structure/general-settings.html">edit style</a></li><li><span class="ol-counter">8.5</span><a href="/data-structure/general-settings.html">create and reuse a component</a></li></ol>
+  <li><span class="ol-counter">8.2</span><a href="/data-structure/component.html">edit html text and media</a></li><li><span class="ol-counter">8.3</span><a href="/data-structure/general-settings.html">edit html structure</a></li><li><span class="ol-counter">8.4</span><a href="/data-structure/general-settings.html">edit style</a></li><li><span class="ol-counter">8.5</span><a href="/data-structure/general-settings.html">create and reuse a component</a></li><li><span class="ol-counter">8.6</span><a href="/how-to/using-tilepieces-with-browser-developer-tools.html">using tilepieces with browser developer tools</a></li></ol>
   </details></li></ol>
 </section></nav>
 <main id="create">
     <h1>HTML</h1>
     <div><span>These APIs allow writing both in the file loaded in the browser and in the file where its source code is.<br></span><div>If the operations provide as a parameter an element that does <a href="/html-live-edit.html">not perfectly correspond</a> to that searched for in the source code, they raise errors.<br>To find out if it is possible to operate on an element,&nbsp;the .find method can be called:<br></div><pre>tilepieces.<span class="hljs-property">core</span>.<span class="hljs-property">htmlMatch</span>.<span class="hljs-title function_">find</span>(element);
-<span class="hljs-comment">/*
+<span class="hljs-comment">/*<br>Return:
 HTML: boolean. true if the innerHTML of the elements are equal
 attributes: boolean. true if the outerHTML of the elements are equal
 match: DOM Node. the node in the hidden source code tree.
