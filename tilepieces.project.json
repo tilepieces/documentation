@@ -10,13 +10,12 @@
       "path": "/components/template"
     }
   },
-  "lastFileOpened": "/index.html",
+  "lastFileOpened": "/core-concepts/current-stylesheet.html",
   "openedPanels": [
     "package-manager",
     "project-explorer",
-    "element-panel",
     "html-inspector",
-    "css-viewer"
+    "component-panel"
   ],
   "relativePaths": false,
   "sandboxFrame": false

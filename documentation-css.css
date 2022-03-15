@@ -23,6 +23,7 @@ main { width: 70%; padding: 1em; background-color: rgb(245, 245, 245); }
   a { }
   main .flex-content img { max-width: 100% !important; }
   div.flex-content { flex-direction: column; }
+  html { background-color: rgb(245, 245, 245); }
 }
 @media screen and (min-width: 1024px) {
   body { flex-direction: row; }
