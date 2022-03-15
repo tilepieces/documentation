@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><link rel="stylesheet" href="/documentation-css.css" data-tilepieces-component="documentation"><link href="/components/documentation-nav/nav-css.css" rel="stylesheet" data-tilepieces-component="documentation-nav"><link rel="stylesheet" href="/css/image-highlight.css" data-webtile-current-stylesheet=""><style data-tilepieces-current-stylesheet="">#open { top: 13.5%; left: 2.7%; width: 9.8%; height: 9%; }
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><link rel="stylesheet" href="/documentation-css.css" data-tilepieces-component="documentation" data-tilepieces-current-stylesheet=""><link href="/components/documentation-nav/nav-css.css" rel="stylesheet" data-tilepieces-component="documentation-nav"><link rel="stylesheet" href="/css/image-highlight.css" data-webtile-current-stylesheet=""><style>#open { top: 13.5%; left: 2.7%; width: 9.8%; height: 9%; }
 #current { top: 13.5%; left: 13.1%; width: 49.8%; height: 9%; }
 #plus { top: 11.7%; left: 63.2%; width: 2.6%; height: 14.7%; }
 #selected { top: 47.2%; left: 3%; width: 60.1%; height: 9.8%; }
@@ -114,7 +114,52 @@
 
 
 
-<main><h1>Panels - CSS viewer - how to insert css rules</h1><article><div>At the top of the "css viewer" panel there is a dropdown with the "<a href="#">conditional group rules</a>" present in the current stylesheet. Here you can add, select and delete "group rules" (at the moment you can only enter <a href="#">media queries</a>. Both media queries and <a href="#">support rules</a> will appear in the list).<br>Click in the panes in the image below for more information<figure><img src="../../miscellaneous/how-to-insert-css-rules.png"><div id="open" tabindex="1"><div>By clicking in this area it will be possible to see / hide the grouping rules associated with the current stylesheet</div></div><div id="current" tabindex="1"><div>Here you can see the selected rule (if there is one). If the rules are nested, they will be separated by a comma and the last one will be the one where the rules will be written</div></div><div id="plus" tabindex="1"><div>
-By clicking on this button, a form will open for the insertion of a new grouping rule</div></div><div id="selected" tabindex="1"><div>The selected rule will be displayed differently from the others</div></div><div id="delete" tabindex="1"><div>You can delete the rule by clicking on this button. All the rules contained within it will be deleted</div></div><div id="selector" tabindex="1"><div>This value is set with the highest CSS specificity rule selector associated with the element or by tagName + classes of the element. You can change the value, so you can create a new rule with the selected selector.</div></div></figure></div><h2>New media query form</h2><div><img src="../../miscellaneous/media-query-form.png"></div>
+<main><h2>
+  Panels - CSS viewer
+</h2><h1>how to insert css rules</h1><article><div>At the top of the "css viewer" panel there is a dropdown with the "<a href="#">conditional group rules</a>" present in the current stylesheet. Here you can add, select and delete "group rules" (at the moment you can only enter <a href="#">media queries</a>. Both media queries and <a href="#">support rules</a> will appear in the list).<br>Click in the panes in the image below for more information
+</div><figure class="info-pop" id="how-to-insert-css-img-pop-up"><img src="/miscellaneous/insert-css-rules.jpg" style="position: relative;"><div id="css-viewer-grouping-rules" tabindex="1" class="info-pop-link"><div style="">
+  <b>Grouping rules</b><br>By clicking in this area it will be possible to see / hide the grouping rules associated with the current stylesheet </div></div><div class="info-pop-link" tabindex="1" id="css-viewer-media-screen"><div style=""><b>@media screen</b><br>Here you can see the selected rule (if there is one). If the rules are nested, they will be separated by a comma and the last one will be the one where the rules will be written</div></div><div class="info-pop-link" tabindex="1" id="css-viewer-media-sceen-add"><div style=""><b>Add new grouping rule</b><br>By clicking on this button, a form will open for the insertion of a new grouping rule</div></div><div class="info-pop-link" tabindex="1" id="css-viewer-media-screen-select"><div>The <b>selected rule</b> will be displayed differently from the others</div></div><div class="info-pop-link" tabindex="1" id="css-viewer-media-screen-delete"><div style=""><b>Delete rule</b><br>You can delete the rule by clicking on this button. All the rules contained within it will be deleted</div></div><div class="info-pop-link" tabindex="1" id="css-viewer-matching"><div style=""><b>Matching</b><br>This value is set with the highest CSS specificity rule selector associated with the element or by tagName + classes of the element.You can change the value, so you can create a new rule with the selected selector.</div></div></figure>
+
+<div class="video-content"><iframe src="https://www.youtube.com/embed/dpHZMJLwfMI?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+  
+</div><h2>New media query form</h2>
+<figure class="info-pop" id="new-media-query-form"><img src="/miscellaneous/css-new-media-query-form.jpg" style="position: relative;"><div id="css-new-media-min-max" tabindex="1" class="info-pop-link" style=""><div style="">
+  <b>Min-max width</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum eros tempor enim dignissim sollicitudin.</div></div>
+
+<div id="css-new-media-freehand" tabindex="1" class="info-pop-link" style=""><div style="">
+  <b>Freehand</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum eros tempor enim dignissim sollicitudin.</div></div>
+
+<div id="css-new-media-media" tabindex="1" class="info-pop-link" style=""><div style="">
+  <b>@media</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum eros tempor enim dignissim sollicitudin.</div></div>
+
+<div id="css-new-media-screen" tabindex="1" class="info-pop-link" style=""><div style="">
+  <b>Screen</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum eros tempor enim dignissim sollicitudin.</div></div>
+
+<div id="css-new-media-and" tabindex="1" class="info-pop-link" style=""><div style="">
+  <b>And</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum eros tempor enim dignissim sollicitudin.</div></div>
+
+<div id="css-new-media-max-width" tabindex="1" class="info-pop-link"><div>
+  <b>Max width</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum eros tempor enim dignissim sollicitudin.</div></div>
+
+
+<div id="css-new-media-screen-size" tabindex="1" class="info-pop-link"><div style="">
+  <b>Screen size</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum eros tempor enim dignissim sollicitudin.</div></div>
+
+<div id="css-new-media-delete" tabindex="1" class="info-pop-link"><div style="">
+  <b>Delete button</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum eros tempor enim dignissim sollicitudin.</div></div>
+
+<div id="css-new-media-add" tabindex="1" class="info-pop-link"><div style="">
+  <b>Add button</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum eros tempor enim dignissim sollicitudin.</div></div>
+
+<div id="css-new-media-set-css" tabindex="1" class="info-pop-link"><div style="">
+  <b>Set css</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum eros tempor enim dignissim sollicitudin.</div></div>
+
+<div id="css-new-media-donw" tabindex="1" class="info-pop-link"><div style="">
+  <b>Done button</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum eros tempor enim dignissim sollicitudin.</div></div></figure>
+
+<div class="video-content">
+  <iframe src="https://www.youtube.com/embed/-JYQqfnbBjo?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+  
+</div>
   
 </article></main></body></html>

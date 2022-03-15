@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" href="/documentation-css.css" data-tilepieces-current-stylesheet="" data-tilepieces-component="documentation"><link href="/components/documentation-nav/nav-css.css" rel="stylesheet" data-tilepieces-component="documentation-nav"><link rel="stylesheet" href="/css/image-highlight.css" data-webtile-current-stylesheet=""><style>figure div.width { top: 67px; left: 129px; width: 177px; height: 27px; }figure div.height { top: 67px; left: 444px; width: 182px; height: 27px; }figure div.fit-to-screen { top: 69px; left: 648px; width: 89px; height: 23px; }figure div.reverse { top: 69px; left: 742px; width: 60px; height: 23px; }figure div.preset-dimensions { top: 69px; left: 811px; width: 95px; height: 23px; }</style></head><body><nav data-tilepieces-component="documentation-nav">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" href="/documentation-css.css" data-tilepieces-component="documentation" data-tilepieces-current-stylesheet=""><link href="/components/documentation-nav/nav-css.css" rel="stylesheet" data-tilepieces-component="documentation-nav"><link rel="stylesheet" href="/css/image-highlight.css" data-webtile-current-stylesheet=""><style>figure div.width { top: 67px; left: 129px; width: 177px; height: 27px; }
+figure div.height { top: 67px; left: 444px; width: 182px; height: 27px; }
+figure div.fit-to-screen { top: 69px; left: 648px; width: 89px; height: 23px; }
+figure div.reverse { top: 69px; left: 742px; width: 60px; height: 23px; }
+figure div.preset-dimensions { top: 69px; left: 811px; width: 95px; height: 23px; }
+#upload-link { top: 18%; width: 30%; left: 35%; }
+#export-link { top: 18%; width: 29%; left: 67%; }
+#create-link { top: 18%; width: 30%; left: 3%; }
+#local-components-list-link { top: 27%; height: 68%; }</style></head><body><nav data-tilepieces-component="documentation-nav">
 	
 <a href="#navigation-index" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">Index</a><section id="navigation-index">
     <ol class="">
@@ -109,9 +117,21 @@
 
 
 
-<main><h1>Panels - Package Manager - Local Components</h1><article><figure><img src="../../miscellaneous/local-components.png"><a href="#create" id="create-link"></a><a href="#upload" id="upload-link"></a><a href="#export" id="export-link"></a><a href="#local-components-list" id="local-components-list-link"></a></figure><h2 id="create">Create Local component</h2><div><div>this button is used to create components within the component / project. If the project is not a component, this button will not be visible.<br></div><div>To add local components that are not subcomponents, you can:<br>
+<main><h2>Panels - Package Manager
+</h2><h1>Local Components</h1><figure><img src="/miscellaneous/Panels-PackageManager-LocalComponent.jpg"><a href="#create" id="create-link"></a><a href="#upload" id="upload-link"></a><a href="#export" id="export-link"></a><a href="#local-components-list" id="local-components-list-link"></a></figure><article><div class="flex-content sticky-content">
+  <img src="/miscellaneous/Panels-PackageManager-LocalComponent-create.jpg">
+  <div><h2 id="create">Create Local component</h2><p>This button is used to create components within the component / project. If the project is not a component, this button will not be visible.</p><p>To add local components that are not subcomponents, you can:</p>
   <ul>
-    <li>Use the upload button</li><li>Importing a global component from their section using the&nbsp;<img src="../../miscellaneous/package-manager-plus-button.png" class="inline">
+    <li>Use the upload button</li><li>Importing a global component from their section using the&nbsp;<img src="/miscellaneous/package-manager-plus-button-grey.jpg" class="inline" style="max-width: 50px;">
 button</li><li>By adding it to the tilepieces.project.json file for the current project</li>
-  </ul>
-</div>After clicking on the Create button, a <a href="#">prompt dialog box</a> will appear asking you for the name of the local component. The local component name cannot have the following characters: <pre><code>/\?%*:|"&lt;&gt;</code></pre></div><div>A folder will be create under project property "componentPath" + component name<br>If you write the name of an already existing component, it will be overwritten.</div><h2 id="upload">Upload a local component</h2><div>By clicking on this button it will be possible to choose a zip file that contains a component.</div><h2 id="export">Export a local component</h2><div>Clicking on this button will generate a zip file containing the selected local components.</div><h2 id="local-components-list">Local components</h2><div>This section will show all the local components in alphabetical order.</div><h2 id="open-project">Set local subcomponent</h2><div>a view equal to the one present in <a href="#">component properties</a> will open in which it will be possible to modify the properties of the component.</div><h2 id="set-sub">Add local subcomponent</h2><div>clicking on this button it will be possible to add a sub-component as seen in 'create local component'.</div><h2 id="delete-sub">Delete local subcomponent</h2><div><div>clicking on this button it will be possible to delete the component. By default, the folder will not be deleted unless the corresponding project property is changed.</div></div></article></main></body></html>
+  </ul><p>After clicking on the Create button, a <a href="#">prompt dialog box</a> will appear asking you for the name of the local component. The local component name cannot have the following characters:</p> <pre><code>/\?%*:|"&lt;&gt;</code></pre><p>A folder will be create under project property "componentPath" + component name<br>If you write the name of an already existing component, it will be overwritten.</p></div>
+  </div><div class="flex-content"><img src="/miscellaneous/Panels-PackageManager-LocalComponent-upload.jpg">
+  <div><h2 id="upload">Upload a local component</h2><p>By clicking on this button it will be possible to choose a zip file that contains a component. </p></div>
+</div><div class="flex-content">
+ <img src="/miscellaneous/Panels-PackageManager-LocalComponent-export.jpg"><div>
+<h2 id="export">Export a local component</h2><p>Clicking on this button will generate a zip file containing the selected local components.</p> </div></div><div class="flex-content">
+  <img src="/miscellaneous/Panels-PackageManager-LocalComponent-list.jpg">
+<div><h2 id="local-components-list">Local components</h2><p>
+  
+  This section will show all the local components in alphabetical order.</p></div></div><div class="flex-content">
+  <img src="/miscellaneous/Panels-PackageManager-LocalComponent-set.jpg"><div><h2 id="open-project">Set local subcomponent</h2><p>A view equal to the one present in <a href="#">component properties</a> will open in which it will be possible to modify the properties of the component.</p></div></div><div class="flex-content"><img src="/miscellaneous/Panels-PackageManager-LocalComponent-add.jpg"><div><h2 id="set-sub">Add local subcomponent</h2><p>Clicking on this button it will be possible to add a sub-component as seen in 'create local component'.</p></div></div><div class="flex-content"><img src="/miscellaneous/Panels-PackageManager-LocalComponent-delete.jpg"><div><h2 id="delete-sub">Delete local subcomponent</h2><p>clicking on this button it will be possible to delete the component. By default, the folder will not be deleted unless the corresponding project property is changed.</p></div></div></article></main></body></html>
