@@ -6,13 +6,12 @@
       "path": "/components/documentation-nav"
     }
   },
-  "lastFileOpened": "/panels/package-manager.html",
+  "lastFileOpened": "/panels/html-inspector.html",
   "openedPanels": [
     "package-manager",
     "project-explorer",
-    "element-panel",
     "html-inspector",
-    "component-panel"
+    "css-viewer"
   ],
   "relativePaths": false,
   "sandboxFrame": false
