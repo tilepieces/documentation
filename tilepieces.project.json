@@ -4,12 +4,17 @@
     "documentation-nav": {
       "name": "documentation-nav",
       "path": "/components/documentation-nav"
+    },
+    "template": {
+      "name": "template",
+      "path": "/components/template"
     }
   },
-  "lastFileOpened": "/panels/html-inspector.html",
+  "lastFileOpened": "/index.html",
   "openedPanels": [
     "package-manager",
     "project-explorer",
+    "element-panel",
     "html-inspector",
     "css-viewer"
   ],

@@ -14,17 +14,17 @@ main img.inline { width: auto; }
 #js-button { top: 17%; height: 11%; width: 5%; left: 39.2%; }
 nav { width: 30%; min-height: 100vh; }
 main { width: 70%; padding: 1em; background-color: rgb(245, 245, 245); }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   body { flex-direction: column; }
-  nav { width: 100%; position: sticky; top: 1px; z-index: 1; min-height: auto; max-width: 100%; margin: 0px; }
-  main { width: 95%; max-width: 100%; margin: 0px auto; padding: 1em 0px; }
+  nav { width: 100%; top: 1px; z-index: 1; min-height: auto; max-width: 100%; margin: 0px; }
+  main { margin: 0px auto; padding: 1em; width: 100%; box-sizing: border-box; }
   a { }
   a { }
   a { }
   main .flex-content img { max-width: 100% !important; }
   div.flex-content { flex-direction: column; }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1024px) {
   body { flex-direction: row; }
   div.flex-content { flex-direction: row; }
 }

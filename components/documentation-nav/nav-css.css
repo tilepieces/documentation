@@ -1,5 +1,5 @@
 a[aria-controls="navigation-index"] { width: 100%; display: block; text-align: center; }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1023px) {
   a[aria-controls="navigation-index"] { display: none; }
 }
 nav ol { margin: 0px; padding: 0px; list-style: none; }
@@ -18,6 +18,7 @@ summary::after { content: ""; cursor: pointer; height: 8px; width: 8px; backgrou
 summary { list-style: none; position: relative; }
 summary { }
 nav details[open] > summary::after { transform: rotate(135deg); margin-top: 5px; margin-left: 20px; }
-@media screen and (max-width: 768px) {
-  #navigation-index { position: relative; border-top: 1px solid rgb(205, 205, 205); }
+@media screen and (max-width: 1023px) {
+  #navigation-index { position: relative; border-top: 1px solid rgb(205, 205, 205); display: none; }
+  #navigation-index.open { display: block; }
 }

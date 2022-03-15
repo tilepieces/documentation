@@ -5,7 +5,7 @@
   "author": "simone di nuovo",
   "website": "",
   "repository": "",
-  "html":"nav.html",
+  "html": "nav.html",
   "addDependenciesToBundles": false,
   "bundle": {
     "stylesheet": {
@@ -13,17 +13,24 @@
     },
     "stylesheetHeader": "",
     "stylesheetFooter": "",
-    "script": {}
+    "scriptHeader": "",
+    "scriptFooter": "",
+    "script": {
+      "src": "documentationNav.js"
+    }
   },
   "sources": {
+    "stylesheets": [],
+    "scripts": []
   },
-  "dependencies": [
-  ],
-  "components": {},
+  "dependencies": [],
   "mergeMiscellaneous": false,
-  "miscellaneous": ["set.js"],
-  "selector": "#navigation-index",
+  "miscellaneous": [
+    "set.js"
+  ],
+  "selector": "",
   "interface": "interface.html",
   "fixedHTML": true,
-  "parseHTML": ""
+  "parseHTML": "",
+  "components": {}
 }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Documentation template interface</title>
+</head>
+<body>
+<button onclick="go()">Set template in all .html files ( except for under "components" path ) </button>
+<script>
+  const windowOpener = window.opener || window.parent;
+  const opener = windowOpener.opener;
+  const mainDialog = opener.dialog
+  let app = opener.tilepieces;
+  async function go(){
+    // GET TEMPLATE AND SEARCHING FOR ALL HTML FILES IN PROJECT
+// get template document
+    var fixedHTMLPath = "/components/template/template.html";
+    mainDialog.open("fetching resource " + fixedHTMLPath, true);
+    try {
+      var htmlTemplate = await app.storageInterface.read(fixedHTMLPath);
+      var parser = new DOMParser();
+      var template = parser.parseFromString(htmlTemplate, "text/html");
+      var htmlfiles = await app.storageInterface.search("", "**/*.html");
+      for (var i = 0; i < htmlfiles.searchResult.length; i++) {
+        var htmlfilePath = htmlfiles.searchResult[i];
+        if(htmlfilePath.startsWith("components/"))
+          continue;
+        mainDialog.open("read resource " + htmlfilePath, true);
+        var htmlfile = await app.storageInterface.read(htmlfilePath);
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(htmlfile, "text/html");
+        // note that 'template' is always the same document
+        template.head.querySelectorAll("style").forEach(v=>v.remove());
+        // title
+        template.title = doc.title || "";
+        // description. Note how the second search for itemprop
+        template.querySelector('meta[name="description"]').content =
+          doc.querySelector('meta[name="description"], meta[itemprop="description"]')?.content || "";
+        // main content
+        template.querySelector("main").innerHTML = doc.querySelector("main")?.innerHTML ||
+          doc.querySelector("body>section")?.innerHTML || "";
+        !template.querySelector("main").innerHTML.length && console.error(htmlfilePath + " doesn't match");
+        template.head.append(...doc.head.querySelectorAll("style"));
+
+        template.body.removeAttribute("data-tilepieces-component");
+        // then save
+        var s = app.core.createDocumentText(template);
+        mainDialog.open("update resource " + htmlfilePath, true);
+        await app.storageInterface.update(htmlfilePath, new Blob([s]));
+      }
+    }
+    catch(e){
+      console.error(e);
+      opener.dialog.close();
+      alertDialog("error in set fixed html",true);
+      return;
+    }
+    opener.dialog.open("update done");
+  }
+</script>
+</body>
+</html>

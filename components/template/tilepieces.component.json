@@ -1,16 +1,14 @@
 {
-  "name": "documentation",
-  "description": "",
-  "version": "1.0.0",
-  "author": "",
+  "name": "template",
+  "description": "tilepieces documentation html template",
+  "version": "0.0.1",
+  "author": "simone di nuovo",
   "website": "",
   "repository": "",
   "html": "",
   "addDependenciesToBundles": false,
   "bundle": {
-    "stylesheet": {
-      "href": "documentation-css.css"
-    },
+    "stylesheet": {},
     "stylesheetHeader": "",
     "stylesheetFooter": "",
     "scriptHeader": "",
@@ -21,20 +19,12 @@
     "stylesheets": [],
     "scripts": []
   },
-  "dependencies": [
-    "documentation-nav",
-    "documentation/hljs"
-  ],
+  "dependencies": [],
   "mergeMiscellaneous": false,
   "miscellaneous": [],
+  "interface": "interface.html",
   "selector": "",
-  "interface": "",
   "fixedHTML": false,
   "parseHTML": "",
-  "components": {
-    "documentation/hljs": {
-      "name": "documentation/hljs",
-      "path": "/components/documentation/hljs"
-    }
-  }
+  "components": {}
 }
