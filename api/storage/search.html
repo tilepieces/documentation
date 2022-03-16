@@ -55,9 +55,9 @@
   </details>
 </li><li><span class="ol-counter">5</span>
   <details>
-    <summary><a href="/data-structure/index.html">Data structures</a></summary><ol>
-    <li><span class="ol-counter">5.1</span><a href="/data-structure/project.html">Project</a></li>
-  <li><span class="ol-counter">5.2</span><a href="/data-structure/component.html">Component</a></li><li><span class="ol-counter">5.3</span><a href="/data-structure/general-settings.html">General Settings</a></li></ol>
+    <summary><a href="/data-structures/index.html">Data structures</a></summary><ol>
+    <li><span class="ol-counter">5.1</span><a href="/data-structures/project.html">Project</a></li>
+  <li><span class="ol-counter">5.2</span><a href="/data-structures/component.html">Component</a></li><li><span class="ol-counter">5.3</span><a href="/data-structures/general-settings.html">General Settings</a></li></ol>
   </details>
 
   
@@ -114,11 +114,11 @@
     <span class="hljs-comment">// looking for all files inside a directory</span>
     <span class="hljs-keyword">await</span> storageInterface.<span class="hljs-title function_">search</span>(<span class="hljs-string">""</span>,<span class="hljs-string">"js"</span>);
     <span class="hljs-comment">// looking for all files matching a glob</span>
-    <span class="hljs-keyword">await</span> storageInterface.<span class="hljs-title function_">search</span>(<span class="hljs-string">""</span>,<span class="hljs-string">"**/**/*.js"</span>);
+    <span class="hljs-keyword">await</span> storageInterface.<span class="hljs-title function_">search</span>(<span class="hljs-string">""</span>,<span class="hljs-string">"**/*.js"</span>);
     <span class="hljs-comment">// looking for more matching...</span>
-    <span class="hljs-keyword">await</span> storageInterface.<span class="hljs-title function_">search</span>(<span class="hljs-string">""</span>,[<span class="hljs-string">"**/**/*.js"</span>,<span class="hljs-string">"**/**/*.css"</span>]);
+    <span class="hljs-keyword">await</span> storageInterface.<span class="hljs-title function_">search</span>(<span class="hljs-string">""</span>,[<span class="hljs-string">"**/*.js"</span>,<span class="hljs-string">"**/*.css"</span>]);
     <span class="hljs-comment">// change the directory under perform a search</span>
-    <span class="hljs-keyword">await</span> storageInterface.<span class="hljs-title function_">search</span>(<span class="hljs-string">"components/library"</span>,[<span class="hljs-string">"**/**/*.js"</span>,<span class="hljs-string">"**/**/*.css"</span>]);
+    <span class="hljs-keyword">await</span> storageInterface.<span class="hljs-title function_">search</span>(<span class="hljs-string">"components/library"</span>,[<span class="hljs-string">"**/*.js"</span>,<span class="hljs-string">"**/*.css"</span>]);
     <span class="hljs-comment">// return only the files which content match a regex</span>
     <span class="hljs-keyword">await</span> storageInterface.<span class="hljs-title function_">search</span>(<span class="hljs-string">""</span>,<span class="hljs-string">"**/*.js"</span>,{<span class="hljs-attr">pattern</span>:<span class="hljs-string">"alert"</span>, <span class="hljs-attr">flags</span>:<span class="hljs-string">"i"</span>});
     <span class="hljs-comment">// perform a search in a global component</span>

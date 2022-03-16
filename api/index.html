@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><title></title><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1.0"><link href="/components/documentation-nav/nav-css.css" rel="stylesheet" data-tilepieces-component="documentation-nav"><link href="/components/documentation/hljs/css.css" rel="stylesheet" data-tilepieces-component="documentation/hljs"><link href="/documentation-css.css" rel="stylesheet" data-tilepieces-component="documentation"></head><body><nav data-tilepieces-component="documentation-nav">
+<html><head><meta charset="UTF-8"><title></title><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1.0"><link href="/components/documentation-nav/nav-css.css" rel="stylesheet" data-tilepieces-component="documentation-nav"><link href="/components/documentation/hljs/css.css" rel="stylesheet" data-tilepieces-component="documentation/hljs"><link href="/documentation-css.css" rel="stylesheet" data-tilepieces-component="documentation" data-tilepieces-current-stylesheet=""></head><body><nav data-tilepieces-component="documentation-nav">
 	
 <a href="#navigation-index" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation" id="navigation-trigger">Menu</a><section id="navigation-index">
     <ol class="">
@@ -55,9 +55,9 @@
   </details>
 </li><li><span class="ol-counter">5</span>
   <details>
-    <summary><a href="/data-structure/index.html">Data structures</a></summary><ol>
-    <li><span class="ol-counter">5.1</span><a href="/data-structure/project.html">Project</a></li>
-  <li><span class="ol-counter">5.2</span><a href="/data-structure/component.html">Component</a></li><li><span class="ol-counter">5.3</span><a href="/data-structure/general-settings.html">General Settings</a></li></ol>
+    <summary><a href="/data-structures/index.html">Data structures</a></summary><ol>
+    <li><span class="ol-counter">5.1</span><a href="/data-structures/project.html">Project</a></li>
+  <li><span class="ol-counter">5.2</span><a href="/data-structures/component.html">Component</a></li><li><span class="ol-counter">5.3</span><a href="/data-structures/general-settings.html">General Settings</a></li></ol>
   </details>
 
   
@@ -113,10 +113,62 @@
   <dl>
     <dt><a href="storage/index.html">Storage</a></dt>
     <dd>They are for file read/write operations,&nbsp;and are meant to be modified by developers to use their preferred <a href="https://en.wikipedia.org/wiki/Frontend_and_backend">backend</a> environment.</dd>
-  <dt><a href="html/index.html">HTML</a> and <a href="css/index.html">CSS</a></dt><dd>These are provided by the application framework, and allow you to edit the html safely (see <a href="/html-live-edit.html">html live edit</a>) and its stylesheet (see <a href="#">current stylesheet</a>).</dd></dl><div><span>These APIs can be called directly from the browser console, or they can be included in a component panel or interface.</span><br><span>APIs that modify HTML or CSS expect a document to be selected, and can interact with these properties of the <code>tilepieces </code>object</span>&nbsp;(instantiated as a global variable in the main window):<pre><code class="hljs language-javascript">tilepieces.<span class="hljs-property">core</span>.<span class="hljs-property">currentWindow </span><span class="hljs-comment">// The window of the selected document</span>
-tilepieces.<span class="hljs-property">core</span>.<span class="hljs-property">currentDocument </span><span class="hljs-comment">// The selected document element</span>
-tilepieces.<span class="hljs-property">core</span>.<span class="hljs-property">currentStyleSheet </span><span class="hljs-comment">// current stylesheet, if any</span>
-tilepieces.<span class="hljs-property">elementSelected </span><span class="hljs-comment">// selected element, if any</span></code>    </pre></div>
+  <dt><a href="html/index.html">HTML</a> and <a href="css/index.html">CSS</a></dt><dd>These are provided by the application framework, and allow you to edit the html safely (see <a href="/core-concepts/html-live-edit.html">html live edit</a>) and its stylesheet (see <a href="#">current stylesheet</a>).</dd></dl><div><span>These APIs can be called directly from the browser console, or they can be included in a component panel or interface.</span><br><span>APIs that modify HTML or CSS expect a document to be selected, and can interact with these properties of the <code>tilepieces </code>object</span>&nbsp;(instantiated as a global variable in the main window):<pre><code class="hljs language-javascript"><span class="hljs-comment">// the tilepieces object is global in the main window</span>
+<span class="hljs-comment">// storageInterface should be both global and exposed on tilepieces.storageInterface</span>
+tilepieces.<span class="hljs-property">core</span>.<span class="hljs-property">currentWindow</span> <span class="hljs-comment">// The window of the selected document</span>
+tilepieces.<span class="hljs-property">core</span>.<span class="hljs-property">currentDocument</span> <span class="hljs-comment">// The selected document element</span>
+tilepieces.<span class="hljs-property">core</span>.<span class="hljs-property">currentStyleSheet</span> <span class="hljs-comment">// current stylesheet, if any</span>
+tilepieces.<span class="hljs-property">elementSelected</span> <span class="hljs-comment">// selected element, if any</span></code>    </pre></div><h2>EXAMPLES</h2><p><span>The API to modify the current document can be useful for example to modify many nodes at once.&nbsp;</span><span>In this example, we add the target="_ blank" attribute to the A tags present in the selected element:</span></p><pre><code class="hljs language-javascript"><span class="hljs-comment">// the tilepieces object is global in the top window</span>
+<span class="hljs-keyword">var</span> aNodes = tilepieces.<span class="hljs-property">elementSelected</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">"a"</span>);
+aNodes.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">aNode</span>=&gt;</span>{
+  <span class="hljs-keyword">try</span>{
+    tilepieces.<span class="hljs-property">core</span>.<span class="hljs-property">htmlMatch</span>.<span class="hljs-title function_">setAttribute</span>(aNode,<span class="hljs-string">"target"</span>,<span class="hljs-string">"_blank"</span>)
+  }
+  <span class="hljs-keyword">catch</span>(e){
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(e);
+  }
+});</code>    </pre><div>The storage APIs are indicated when you want to make changes to multiple html at a time, as shown in this example:</div><pre><code class="hljs language-javascript"><span class="hljs-keyword">var</span> app = tilepieces;
+<span class="hljs-keyword">try</span>{
+  <span class="hljs-keyword">var</span> htmlfiles = <span class="hljs-keyword">await</span> app.<span class="hljs-property">storageInterface</span>.<span class="hljs-title function_">search</span>(<span class="hljs-string">""</span>, <span class="hljs-string">"**/*.html"</span>); <span class="hljs-comment">// all html files in project</span>
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; htmlfiles.<span class="hljs-property">searchResult</span>.<span class="hljs-property">length</span>; i++) {
+    <span class="hljs-keyword">var</span> htmlfilePath = htmlfiles.<span class="hljs-property">searchResult</span>[i];
+    <span class="hljs-keyword">var</span> htmlfile = <span class="hljs-keyword">await</span> app.<span class="hljs-property">storageInterface</span>.<span class="hljs-title function_">read</span>(htmlfilePath);
+    <span class="hljs-comment">// we use native DOMParser to be able to make changes via the DOM API.</span>
+    <span class="hljs-keyword">var</span> parser = <span class="hljs-keyword">new</span> <span class="hljs-title class_">DOMParser</span>();
+    <span class="hljs-keyword">var</span> doc = parser.<span class="hljs-title function_">parseFromString</span>(htmlfile, <span class="hljs-string">"text/html"</span>);
+    <span class="hljs-comment">// do whatever you want with doc ...</span>
+    <span class="hljs-comment">// then save</span>
+    <span class="hljs-keyword">var</span> s = app.<span class="hljs-property">core</span>.<span class="hljs-title function_">createDocumentText</span>(doc);
+    <span class="hljs-keyword">await</span> app.<span class="hljs-property">storageInterface</span>.<span class="hljs-title function_">update</span>(htmlfilePath, <span class="hljs-keyword">new</span> <span class="hljs-title class_">Blob</span>([s]));
+  }
+}
+<span class="hljs-keyword">catch</span>(e){
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(e);
+}</code>    </pre><div>We can also use the storage API to extract data: the following example traces all the html files that contain the IMG tag, excluding the files under the folder associated with the components:</div><pre><code class="hljs language-javascript"><span class="hljs-keyword">var</span> images = [];
+<span class="hljs-keyword">var</span> app = tilepieces;
+<span class="hljs-keyword">try</span> {
+  <span class="hljs-keyword">var</span> htmlfiles = <span class="hljs-keyword">await</span> app.<span class="hljs-property">storageInterface</span>.<span class="hljs-title function_">search</span>(<span class="hljs-string">""</span>, <span class="hljs-string">"**/*.html"</span>);
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; htmlfiles.<span class="hljs-property">searchResult</span>.<span class="hljs-property">length</span>; i++) {
+    <span class="hljs-keyword">var</span> htmlfilePath = htmlfiles.<span class="hljs-property">searchResult</span>[i];
+    <span class="hljs-keyword">var</span> componentPath = tilepieces.<span class="hljs-property">componentPath</span>.<span class="hljs-title function_">endsWith</span>(<span class="hljs-string">'/'</span>) ?
+      tilepieces.<span class="hljs-property">componentPath</span> : tilepieces.<span class="hljs-property">componentPath</span> + <span class="hljs-string">"/"</span>;
+    <span class="hljs-keyword">if</span> (htmlfilePath.<span class="hljs-title function_">startsWith</span>(componentPath))
+      <span class="hljs-keyword">continue</span>;
+    <span class="hljs-keyword">var</span> htmlfile = <span class="hljs-keyword">await</span> app.<span class="hljs-property">storageInterface</span>.<span class="hljs-title function_">read</span>(htmlfilePath);
+    <span class="hljs-keyword">var</span> parser = <span class="hljs-keyword">new</span> <span class="hljs-title class_">DOMParser</span>();
+    <span class="hljs-keyword">var</span> doc = parser.<span class="hljs-title function_">parseFromString</span>(htmlfile, <span class="hljs-string">"text/html"</span>);
+    doc.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">"img"</span>).<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">v</span> =&gt;</span> images.<span class="hljs-title function_">push</span>({
+      <span class="hljs-attr">srcAttribute</span>: v.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-string">"src"</span>),
+      <span class="hljs-attr">srcFromMiscellaneous</span>: v.<span class="hljs-property">src</span>?.<span class="hljs-title function_">split</span>(app.<span class="hljs-property">miscDir</span> + <span class="hljs-string">"/"</span>)?.<span class="hljs-title function_">pop</span>(),
+      <span class="hljs-attr">src</span>: v.<span class="hljs-property">src</span>,
+      <span class="hljs-attr">path</span>: htmlfilePath
+    }))
+  }
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(images,images.<span class="hljs-property">length</span>);
+}
+<span class="hljs-keyword">catch</span>(e){
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(e);
+}</code>    </pre>
 
 
 </main><script src="/components/documentation-nav/documentationNav.js" data-tilepieces-component="documentation-nav"></script></body></html>

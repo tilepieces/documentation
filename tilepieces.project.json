@@ -10,11 +10,12 @@
       "path": "/components/template"
     }
   },
-  "lastFileOpened": "/UI/index.html",
+  "lastFileOpened": "/UI/navigation-menu.html",
   "openedPanels": [
-    "package-manager",
     "project-explorer",
+    "element-panel",
     "html-inspector",
+    "css-viewer",
     "component-panel"
   ],
   "relativePaths": false,
