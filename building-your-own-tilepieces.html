@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><title></title><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1.0"><link href="/components/documentation-nav/nav-css.css" rel="stylesheet" data-tilepieces-component="documentation-nav"><link href="/components/documentation/hljs/css.css" rel="stylesheet" data-tilepieces-component="documentation/hljs"><link href="/documentation-css.css" rel="stylesheet" data-tilepieces-component="documentation"></head><body><nav data-tilepieces-component="documentation-nav">
+<html lang="en"><head><meta charset="UTF-8"><title></title><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1.0"><link href="/components/documentation-nav/nav-css.css" rel="stylesheet" data-tilepieces-component="documentation-nav"><link href="/components/documentation/hljs/css.css" rel="stylesheet" data-tilepieces-component="documentation/hljs"><link href="/documentation-css.css" rel="stylesheet" data-tilepieces-component="documentation"></head><body><nav data-tilepieces-component="documentation-nav">
 	
 <a href="#navigation-index" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation" id="navigation-trigger">Menu</a><section id="navigation-index">
     <ol class="">
@@ -14,7 +14,7 @@
   </details></li><li><span class="ol-counter">3</span>
   <details>
     <summary><a href="/UI/index.html">UI</a></summary><ol>
-        <li><span class="ol-counter">3.1</span><a href="/UI/navigation-menu.html">navigation menu</a></li><li><span class="ol-counter">3.2</span><a href="/UI/DOM-selector.html">DOM selector<br></a></li><li><span class="ol-counter">3.3</span><a href="/UI/text-editor.html">Text Editor</a></li><li><span class="ol-counter">3.4</span><a href="/UI/frame.html">Frame</a></li><li><span class="ol-counter">3.5</span><a href="/UI/panels.html">Panels<br></a></li><li><span class="ol-counter">3.6</span><a href="/UI/dialog.html">dialog</a></li>
+        <li><span class="ol-counter">3.1</span><a href="/UI/navigation-menu.html">Navigation menu</a></li><li><span class="ol-counter">3.2</span><a href="/UI/element-selector.html">Element selector</a></li><li><span class="ol-counter">3.3</span><a href="/UI/text-editor.html">Text Editor</a></li><li><span class="ol-counter">3.4</span><a href="/UI/frame.html">Frame</a></li><li><span class="ol-counter">3.5</span><a href="/UI/panels.html">Panels<br></a></li><li><span class="ol-counter">3.6</span><a href="/UI/dialog.html">dialog</a></li>
     </ol>
   </details>
 
@@ -107,9 +107,13 @@
     <li><span class="ol-counter">8.1</span><a href="/data-structure/project.html">create a project with an html</a></li>
   <li><span class="ol-counter">8.2</span><a href="/data-structure/component.html">edit html text and media</a></li><li><span class="ol-counter">8.3</span><a href="/data-structure/general-settings.html">edit html structure</a></li><li><span class="ol-counter">8.4</span><a href="/data-structure/general-settings.html">edit style</a></li><li><span class="ol-counter">8.5</span><a href="/data-structure/general-settings.html">create and reuse a component</a></li><li><span class="ol-counter">8.6</span><a href="/how-to/using-tilepieces-with-browser-developer-tools.html">create a component interface</a></li><li><span class="ol-counter">8.7</span><a href="/how-to/using-tilepieces-with-browser-developer-tools.html">using tilepieces with browser developer tools</a></li></ol>
   </details></li></ol>
-</section></nav><main><h1>Building a tilepieces app</h1><article><div><div>To build your own version of tilepieces, you need to download or clone the "<a href="#">tilepieces</a>" project with git.</div><div>Once done, you can edit&nbsp;<code>index.html</code>&nbsp;in the root to:
+</section></nav><main><h1>Building a tilepieces app</h1><article><div><span>To create your own version of tilepieces, the simplest way is to follow these steps:</span>
+  <ol>
+    <li>download or clone the <a href="#">tilepieces project</a> with git</li>
+  <li><span style="font-size: 19.2px;">open the project with the <a href="#">node.js version of tilepieces</a>, from here <a href="/panels/package-manager/local-components.html#export">export the local components</a> of the project and <a href="/panels/package-manager/local-components.html#import">import them into a new project</a>.</span></li><li>create an index.html file at the project root, here import the framework project bundle using the <a href="/panels/components.html">component panel</a>.</li></ol>
+</div><div><span>At this point you will have a version without the storage functions.<span><br></span>If you delete the package manager and project explorer panels, you will be able to modify an html file set by code. <span>This is very useful for testing core functionality.&nbsp;</span>Here is an <a href="#">example</a>.<br><br></span><div>You can then edit&nbsp;<code>index.html</code>&nbsp;in the root to:
   <ul>
-    <li>Insert the desired <a href="/api/storage/index.html">storageInterface </a>library. By default it has a script pointing that works with the node.js version.<br></li>
+    <li>Insert the desired <a href="/api/storage/index.html">storageInterface </a>library.<br></li>
   <li>Add <a href="panels/index.html">panels</a> with new additional features.</li></ul>
 </div>
   
