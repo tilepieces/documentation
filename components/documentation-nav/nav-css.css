@@ -11,12 +11,10 @@ nav #navigation-index > ol > li { margin: 1em auto; text-transform: uppercase; f
 nav a { text-decoration: none; color: rgb(139, 139, 139); }
 nav summary::marker { color: rgb(204, 204, 204); }
 nav ol li details ol li { font-size: 18px; text-transform: none; }
-li.select { }
 li.select > details > summary a, li.select > a { color: rgb(15, 15, 15); }
 li.select > span.ol-counter { color: rgb(15, 15, 15); }
 summary::after { content: ""; cursor: pointer; height: 8px; width: 8px; background-color: transparent; border-top: 2px solid rgb(153, 152, 152); border-right: 2px solid rgb(153, 152, 152); display: inline-block; transform: rotate(45deg); margin-left: 15px; position: absolute; margin-top: 9px; }
 summary { list-style: none; position: relative; }
-summary { }
 nav details[open] > summary::after { transform: rotate(135deg); margin-top: 5px; margin-left: 20px; }
 @media screen and (max-width: 1023px) {
   #navigation-index { position: relative; border-top: 1px solid rgb(205, 205, 205); display: none; }
