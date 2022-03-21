@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><title></title><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1.0"><link href="/components/documentation-nav/nav-css.css" rel="stylesheet" data-tilepieces-component="documentation-nav"><link href="/components/documentation/hljs/css.css" rel="stylesheet" data-tilepieces-component="documentation/hljs"><link href="/documentation-css.css" rel="stylesheet" data-tilepieces-component="documentation"></head><body><nav data-tilepieces-component="documentation-nav">
+  <img src="none">
+
 	
 <a href="#navigation-index" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation" id="navigation-trigger">Menu</a><section id="navigation-index">
     <ol class="">
@@ -50,7 +52,52 @@
   <ol>
     
   <li><span class="ol-counter">4.4.1</span><a href="/panels/css-viewer/how-to-insert-css-rules.html">How to insert CSS Rules</a></li><li><span class="ol-counter">4.4.2</span><a href="/panels/css-viewer/inspector.html">Inspector</a></li><li><span class="ol-counter">4.4.3</span><a href="/panels/css-viewer/layout.html">Layout</a></li><li><span class="ol-counter">4.4.4</span><a href="/panels/css-viewer/text.html">Text</a></li><li><span class="ol-counter">4.4.5</span><a href="/panels/css-viewer/background.html">Background</a></li><li><span class="ol-counter">4.4.6</span><a href="/panels/css-viewer/border.html">Border</a></li><li><span class="ol-counter">4.4.7</span><a href="/panels/css-viewer/transform.html">Transform</a></li><li><span class="ol-counter">4.4.8</span><a href="/panels/css-viewer/animations.html">Animations</a></li><li><span class="ol-counter">4.4.9</span><a href="/panels/css-viewer/fonts.html">Fonts</a></li></ol>
-</details></li><li><span class="ol-counter">4.5</span><a href="/panels/components.html">Components</a></li><li><span class="ol-counter">4.6</span><a href="/panels/element.html">Element</a></li><li><span class="ol-counter">4.7</span><a href="/panels/history.html">History</a></li>
+</details></li><li><span class="ol-counter">4.5</span>
+<details> 
+  <summary>
+  <a href="/panels/components.html">Components</a>
+  </summary>
+  <ol>
+    <li>
+    <span class="ol-counter">4.5.1
+      </span>
+      <a href="/panels/components/standard-tag.html">Standard Tag</a>
+    </li>
+  
+  <li>
+    <span class="ol-counter">4.5.2
+      </span>
+      <a href="/panels/components/components.html">Components</a>
+    </li>
+   <li>
+    <span class="ol-counter">4.5.3
+      </span>
+      <a href="/panels/components/UFT8-characters.html">UFT8 Characters</a>
+    </li>
+    
+  </ol>
+  </details>  
+  </li><li><span class="ol-counter">4.6</span>
+  <details>
+  <summary>
+    <a href="/panels/element.html">Element</a>
+    </summary>
+    <ol>
+      <li><span class="ol-counter">4.6.1
+        
+        </span><a href="/panels/element/main.html">Main</a>
+      </li>
+      <li><span class="ol-counter">4.6.2
+        
+        </span><a href="/panels/element/children.html">Children</a>
+      </li>
+       <li><span class="ol-counter">4.6.3
+        
+        </span><a href="/panels/element/component-interface.html">Component Interface</a>
+      </li>
+    </ol>
+  </details>
+  </li><li><span class="ol-counter">4.7</span><a href="/panels/history.html">History</a></li>
     <li><span class="ol-counter">4.8</span><a href="/panels/screen-dimensions.html">Screen dimensions</a></li></ol>
   </details>
 </li><li><span class="ol-counter">5</span>
@@ -107,4 +154,6 @@
     <li><span class="ol-counter">8.1</span><a href="/data-structure/project.html">create a project with an html</a></li>
   <li><span class="ol-counter">8.2</span><a href="/data-structure/component.html">edit html text and media</a></li><li><span class="ol-counter">8.3</span><a href="/data-structure/general-settings.html">edit html structure</a></li><li><span class="ol-counter">8.4</span><a href="/data-structure/general-settings.html">edit style</a></li><li><span class="ol-counter">8.5</span><a href="/data-structure/general-settings.html">create and reuse a component</a></li><li><span class="ol-counter">8.6</span><a href="/how-to/using-tilepieces-with-browser-developer-tools.html">create a component interface</a></li><li><span class="ol-counter">8.7</span><a href="/how-to/using-tilepieces-with-browser-developer-tools.html">using tilepieces with browser developer tools</a></li></ol>
   </details></li></ol>
-</section></nav><main><h1>Data Structures - general settings</h1><article><div>These properties are written in the "settings.json" file present in the application root.</div><h2 id="panel-position">PANELS DOCK POSITIONS</h2><div><div>The position where the panels are grouped.</div><div>If "free" is selected, the panels are not grouped and can be dragged into the browser window.</div><div>This setting does not apply when the window width is less than 1024.</div></div><h2 id="sandbox-page">SANDBOX PAGE</h2><div>This Boolean value, when set to true(which is its default value), sets a number of restrictions on the document by adding the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox">sandbox="allow-same-origin"</a> attribute to the iframe that loads the document.<br>When a new project is created, it inherits the setting of this property.</div><h2 id="relative-paths">RELATIVE PATHS</h2><div>This property specifies how the files in html or css documents must be associated (for example when we load an image file): if true, the path will start from the root of the project (for example /img/an-image.svg), otherwise it will start from the html or css document to which it is associated (for example ../img/an-image.svg)</div><h2 id="components-path">COMPONENT PATH</h2><div>It allows to set the directory where the components are installed.</div><h2 id="miscellaneous-dir">MISCELLANEOUS DIR</h2><div>When media files are dragged or pasted into a document, they will be placed inside the folder specified by this path.</div><h2 id="delayUpdateFileMs">DELAY WHEN UPDATE FILE</h2><div>Tilepieces automatically saves all changes to the HTML document and linked CSS files.<br>This property sets the delay&nbsp;(in milliseconds)&nbsp;between the last modification and the actual saving of the file. Default to 500.</div><h2 id="image-type-process">IMAGE TYPE PROCESS</h2><div>When media files are dragged or pasted into a document, saving can be done using the storage API or in base64 within the document file itself. This possibility was introduced to better test the application without the storage APIs. Values are 0 or 64, usually set to 0 when the storage API is present.</div></article></main><script src="/components/documentation-nav/documentationNav.js" data-tilepieces-component="documentation-nav"></script></body></html>
+</section></nav><main><h2>
+  Data Structures
+</h2><h1> General Settings</h1><article><div>These properties are written in the "settings.json" file present in the application root.</div><h2 id="panel-position">PANELS DOCK POSITIONS</h2><div><div>The position where the panels are grouped.</div><div>If "free" is selected, the panels are not grouped and can be dragged into the browser window.</div><div>This setting does not apply when the window width is less than 1024.</div></div><h2 id="sandbox-page">SANDBOX PAGE</h2><div>This Boolean value, when set to true(which is its default value), sets a number of restrictions on the document by adding the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox">sandbox="allow-same-origin"</a> attribute to the iframe that loads the document.<br>When a new project is created, it inherits the setting of this property.</div><h2 id="relative-paths">RELATIVE PATHS</h2><div>This property specifies how the files in html or css documents must be associated (for example when we load an image file): if true, the path will start from the root of the project (for example /img/an-image.svg), otherwise it will start from the html or css document to which it is associated (for example ../img/an-image.svg)</div><h2 id="components-path">COMPONENT PATH</h2><div>It allows to set the directory where the components are installed.</div><h2 id="miscellaneous-dir">MISCELLANEOUS DIR</h2><div>When media files are dragged or pasted into a document, they will be placed inside the folder specified by this path.</div><h2 id="delayUpdateFileMs">DELAY WHEN UPDATE FILE</h2><div>Tilepieces automatically saves all changes to the HTML document and linked CSS files.<br>This property sets the delay&nbsp;(in milliseconds)&nbsp;between the last modification and the actual saving of the file. Default to 500.</div><h2 id="image-type-process">IMAGE TYPE PROCESS</h2><div>When media files are dragged or pasted into a document, saving can be done using the storage API or in base64 within the document file itself. This possibility was introduced to better test the application without the storage APIs. Values are 0 or 64, usually set to 0 when the storage API is present.</div></article></main><script src="/components/documentation-nav/documentationNav.js" data-tilepieces-component="documentation-nav"></script></body></html>
