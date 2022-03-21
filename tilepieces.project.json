@@ -10,12 +10,12 @@
       "path": "/components/template"
     }
   },
-  "lastFileOpened": "/api/index.html",
+  "lastFileOpened": "/panels/html-inspector.html",
   "openedPanels": [
     "package-manager",
     "project-explorer",
     "html-inspector",
-    "panel-history"
+    "component-panel"
   ],
   "relativePaths": false,
   "sandboxFrame": false
