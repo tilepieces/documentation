@@ -14,7 +14,7 @@
   const opener = window.opener || window.parent;
   var app = opener.tilepieces;
   updateAll.addEventListener("click",async e=>{
-    setFixedHTMLInProject(app.components["documentation-nav"])
+    setFixedHTMLInProject(app.localComponentsFlat["documentation/documentation-nav"])
   });
   fixUl.addEventListener("click",async e=>{
     var lis = app.core.currentDocument.querySelectorAll("span.ol-counter");

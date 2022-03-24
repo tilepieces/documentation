@@ -22,19 +22,38 @@
     "scripts": []
   },
   "dependencies": [
-    "documentation-nav",
+    "documentation/documentation-nav",
     "documentation/hljs"
   ],
-  "mergeMiscellaneous": false,
-  "miscellaneous": [],
+  "mergeMiscellaneous": true,
+  "miscellaneous": [
+    "documentation",
+    "components/documentation/bundle"
+  ],
   "selector": "",
   "interface": "",
   "fixedHTML": false,
   "parseHTML": "",
   "components": {
     "documentation/hljs": {
-      "name": "documentation/hljs",
-      "path": "/components/documentation/hljs"
+      "path": "/components/documentation/hljs",
+      "name": "documentation/hljs"
+    },
+    "documentation/architecture-design": {
+      "path": "/components/documentation/architecture-design",
+      "name": "documentation/architecture-design"
+    },
+    "documentation/bundle": {
+      "path": "/components/documentation/bundle",
+      "name": "documentation/bundle"
+    },
+    "documentation/documentation-nav": {
+      "path": "/components/documentation-nav",
+      "name": "documentation/documentation-nav"
+    },
+    "documentation/template": {
+      "path": "/components/template",
+      "name": "documentation/template"
     }
   }
 }

@@ -1,22 +1,22 @@
 {
   "name": "documentation",
   "components": {
-    "documentation-nav": {
-      "name": "documentation-nav",
-      "path": "/components/documentation-nav"
-    },
-    "template": {
-      "name": "template",
-      "path": "/components/template"
+    "www.tilepieces.net": {
+      "name": "www.tilepieces.net",
+      "path": "/components/www.tilepieces.net"
     }
   },
-  "lastFileOpened": "/panels/html-inspector.html",
+  "lastFileOpened": "/documentation/building-your-own-tilepieces.html",
   "openedPanels": [
     "package-manager",
     "project-explorer",
+    "element-panel",
     "html-inspector",
-    "component-panel"
+    "css-viewer",
+    "component-panel",
+    "panel-history"
   ],
   "relativePaths": false,
-  "sandboxFrame": false
+  "sandboxFrame": false,
+  "files": []
 }
