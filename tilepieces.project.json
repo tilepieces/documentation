@@ -6,13 +6,12 @@
       "path": "/components/www.tilepieces.net"
     }
   },
-  "lastFileOpened": "/documentation/building-your-own-tilepieces.html",
+  "lastFileOpened": "/documentation/index.html",
   "openedPanels": [
     "package-manager",
     "project-explorer",
     "element-panel",
     "html-inspector",
-    "css-viewer",
     "component-panel",
     "panel-history"
   ],
