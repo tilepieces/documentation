@@ -4,16 +4,20 @@
     "www.tilepieces.net": {
       "name": "www.tilepieces.net",
       "path": "/components/www.tilepieces.net"
+    },
+    "ckeditor4-tilepieces-component": {
+      "name": "ckeditor4-tilepieces-component",
+      "path": "/components/ckeditor4-tilepieces-component"
     }
   },
-  "lastFileOpened": "/documentation/index.html",
+  "lastFileOpened": "/documentation/panels/colorpicker.html",
   "openedPanels": [
     "package-manager",
     "project-explorer",
     "element-panel",
     "html-inspector",
-    "component-panel",
-    "panel-history"
+    "css-viewer",
+    "component-panel"
   ],
   "relativePaths": false,
   "sandboxFrame": false,
