@@ -10,13 +10,12 @@
       "path": "/components/ckeditor4-tilepieces-component"
     }
   },
-  "lastFileOpened": "/documentation/data-structures/component.html",
+  "lastFileOpened": "/documentation/panels/package-manager/projects.html",
   "openedPanels": [
     "package-manager",
     "project-explorer",
     "element-panel",
     "html-inspector",
-    "css-viewer",
     "component-panel"
   ],
   "relativePaths": false,
