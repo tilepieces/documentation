@@ -10,13 +10,13 @@
       "path": "/components/ckeditor4-tilepieces-component"
     }
   },
-  "lastFileOpened": "/documentation/panels/css-viewer/inspector.html",
+  "lastFileOpened": "/documentation/api/css/insertCssRule.html",
   "openedPanels": [
     "package-manager",
     "project-explorer",
-    "element-panel",
     "html-inspector",
-    "css-viewer"
+    "css-viewer",
+    "panel-history"
   ],
   "relativePaths": false,
   "sandboxFrame": false,
