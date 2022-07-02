@@ -10,16 +10,16 @@
       "path": "/components/ckeditor4-tilepieces-component"
     }
   },
-  "lastFileOpened": "/documentation/core-concepts/html-live-edit.html",
+  "lastFileOpened": "/documentation/data-structures/project.html",
   "openedPanels": [
     "package-manager",
     "project-explorer",
     "element-panel",
     "html-inspector",
-    "component-panel",
-    "panel-history"
+    "css-viewer"
   ],
-  "relativePaths": false,
+  "relativePaths": true,
   "sandboxFrame": false,
-  "files": []
+  "files": [],
+  "skipMatchAll": false
 }
